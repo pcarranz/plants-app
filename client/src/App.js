@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import PlantCards from "./components/PlantCards";
+import AddPlant from "./components/AddPlant";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </div>
       </nav>
       <div class="container">
+        <div class="row">
+          <AddPlant />
+        </div>
         <div class="row">
           <PlantCards />
         </div>
