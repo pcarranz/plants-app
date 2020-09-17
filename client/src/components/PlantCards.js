@@ -33,15 +33,15 @@ class PlantCards extends Component {
       <>
         {plants ? (
           plants.map((plant) => (
-            <div class="col">
-              <div class="card" style={{ width: "18rem" }}>
+            <div className="col" key={plant.name.toString()}>
+              <div className="card" style={{ width: "18rem" }}>
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src="https://via.placeholder.com/180x100"
-                  alt="Card image cap"
+                  alt=""
                 />
-                <div class="card-body">
-                  <h5 class="card-title">{plant.name}</h5>
+                <div className="card-body">
+                  <h5 className="card-title">{plant.name}</h5>
                 </div>
               </div>
             </div>

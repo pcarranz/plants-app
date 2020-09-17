@@ -6,6 +6,13 @@ const PlantSchema = new Schema({
     type: String,
     required: [true, "The name text field is required"],
   },
+  type: {
+    type: String,
+    required: [true, "The type text field is required"],
+  },
+  care: {
+    type: String,
+  },
 });
 
 const Plant = mongoose.model("plant", PlantSchema);

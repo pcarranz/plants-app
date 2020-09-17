@@ -9,8 +9,12 @@ router.get("/plants", (req, res, next) => {
 });
 
 router.post("/plants", (req, res, next) => {
-  if (req.body.name) {
-    Plant.create(req.body)
+  if (req.body.name && req.body.type) {
+    Plant.create({
+      name: req.body.name,
+      type: req.body.type,
+      care: req.body.care,
+    })
       .then((data) => res.json(data))
       .catch(next);
   } else {

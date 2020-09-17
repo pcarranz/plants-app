@@ -6,12 +6,10 @@ import AddPlant from "./components/AddPlant";
 function App() {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="">
-          Plants
-        </a>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <h1 className="navbar-brand">Plants</h1>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -19,21 +17,21 @@ function App() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="">
-              Dashboard <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav">
+            <a className="nav-item nav-link active" href="/">
+              Dashboard <span className="sr-only">(current)</span>
             </a>
           </div>
         </div>
       </nav>
-      <div class="container">
-        <div class="row">
+      <div className="container">
+        <div className="row">
           <AddPlant />
         </div>
-        <div class="row">
+        <div className="row">
           <PlantCards />
         </div>
       </div>
